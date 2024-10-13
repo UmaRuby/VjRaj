@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Seminar</title>
+    <style>
+        /* Add some basic styling to make the page look decent */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadein 2s;
+        }
+        .content img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .contact {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+        }
+        /* Add animation to the content section */
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Add media queries for mobile devices */
+        @media only screen and (max-width: 768px) {
+            nav {
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+            .content {
+                margin: 10px;
+                padding: 10px;
+            }
+            .contact {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#seminar">Meow & Forever</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seminar Content -->
+    <section id="seminar" class="content">
+        <img src="http://www.1zoom.me/big2/906/295765-werecat.jpg" alt="Cats">
+        <h1>Cats</h1>
+        <p>Welcome to our website! Here, you'll learn all about our feline friends and how to care for them.</p>
+        <p>Our website will cover topics such as:</p>
+        <ul>
+            <li>Cat behavior and body language</li>
+            <li>Cat nutrition and health</li>
+            <li>Cat grooming and hygiene</li>
+</ul>  
+ <a href="https://cutecat4546.blogspot.com" class="button">VISIT MY BlOG!</a>
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1>Get in Touch</h1>
+        <p>Have a question or want to say hi? Fill out the form below!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
